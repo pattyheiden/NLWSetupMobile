@@ -13,7 +13,7 @@ export function BackButton() {
             <Feather
                 name="arrow-left"
                 size={32}
-                color={colors.zinc[400]}
+                color={colors.neutral[400]}
             />
         </TouchableOpacity>
     )

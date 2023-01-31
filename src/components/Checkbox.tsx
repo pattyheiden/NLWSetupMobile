@@ -26,7 +26,7 @@ export function Checkbox({ title, checked = false, ...rest }: Props) {
                 </View>
                 :
                 <View 
-                    className='h-8 w-8 bg-zinc-900 rounded-lg'
+                    className='h-8 w-8 bg-neutral-900 rounded-lg'
                 />
             }
 
