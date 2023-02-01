@@ -22,13 +22,13 @@ export function New() {
     async function handleCreateNewHabit() {
         try {
             if (!title.trim() || weekDays.length === 0) {
-                Alert.alert('Novo hábito', 'Informe o nome do hábito e escolha os dias da semana.');
-            } else {
+                return Alert.alert('Novo hábito', 'Informe o nome do hábito e escolha os dias da semana.');
+            } 
                 await api.post('/habits', { title, weekDays });
                 setTitle('');
                 setWeekDays([]);
                 Alert.alert('Opaa', 'Hábito cadastrado com sucesso!')
-            }
+            
         } catch (error) {
             console.log(error);
             Alert.alert('Ops', 'Não foi possível cadastrar o novo hábito');
